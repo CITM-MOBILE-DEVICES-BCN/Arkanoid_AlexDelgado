@@ -23,9 +23,10 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
-    private GameStateManager gameStateManager;
+    public GameStateManager gameStateManager;
+
+    public GameStateManager StateManager => gameStateManager;
     public GameState CurrentGameState { get { return gameStateManager.CurrentState; } }
-    public GameStateManager StateManager { get { return gameStateManager; } }
 
     public enum GameState
     {

@@ -36,11 +36,11 @@ public class BallController : MonoBehaviour
         };
         paddleOffsetX = paddleTarget.gameObject.GetComponent<SpriteRenderer>().bounds.extents.x;
         transform.position = paddleTarget.position + new Vector3(paddleOffsetX, paddleOffsetY, 0);
+        GameManager.Instance.StateManager.OnChangeState += OnLaunch;
     }
 
     private void OnEnable()
     {
-        GameManager.Instance.StateManager.OnChangeState += OnLaunch;
     }
 
     private void OnDestroy()
@@ -61,8 +61,6 @@ public class BallController : MonoBehaviour
         if(gameState == GameState.Play)
         {
             Launch();
-
-            GameManager.Instance.StateManager.ChangeState(new PlayState());
         }
     }
 
