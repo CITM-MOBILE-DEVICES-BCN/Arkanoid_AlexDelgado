@@ -1,16 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static GameManager;
 
 public class BallController : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Vector2[] predefinedDirections;
-    private Vector2 velocity;
 
     [SerializeField] private float speed = 1;
     [SerializeField] private Transform paddleTarget;
     [SerializeField] private float paddleOffsetY = 1;
+    private float paddleOffsetX;
 
     private void Start()
     {
@@ -33,7 +34,46 @@ public class BallController : MonoBehaviour
             new Vector2(Mathf.Cos(3 * Mathf.PI / 8), -Mathf.Sin(3 * Mathf.PI / 8)), // 67.5 degrees
             new Vector2(-Mathf.Cos(3 * Mathf.PI / 8), -Mathf.Sin(3 * Mathf.PI / 8)),// 67.5 degrees
         };
+        paddleOffsetX = paddleTarget.gameObject.GetComponent<SpriteRenderer>().bounds.extents.x;
+        transform.position = paddleTarget.position + new Vector3(paddleOffsetX, paddleOffsetY, 0);
+    }
 
+    private void OnEnable()
+    {
+        GameManager.Instance.StateManager.OnChangeState += OnLaunch;
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.Instance.StateManager.OnChangeState -= OnLaunch;
+    }
+
+    private void Update()
+    {
+        if(GameManager.Instance.CurrentGameState == GameState.Init)
+        {
+            transform.position = paddleTarget.position + new Vector3(paddleOffsetX, paddleOffsetY, 0);
+        }
+    }
+
+    private void OnLaunch(GameState gameState)
+    {
+        if(gameState == GameState.Play)
+        {
+            Launch();
+
+            GameManager.Instance.StateManager.ChangeState(new PlayState());
+        }
+    }
+
+    private void Launch()
+    {
+        // TODO: hacer que la bola salga hacia donde se mueve el player
+        rb.velocity = new Vector2(0f, speed);
+    }
+
+    private void Stay()
+    {
         transform.position = paddleTarget.position + new Vector3(0, paddleOffsetY, 0);
     }
 

@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+            gameStateManager = new GameStateManager();
         }
         else
         {
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
 
     private GameStateManager gameStateManager;
     public GameState CurrentGameState { get { return gameStateManager.CurrentState; } }
+    public GameStateManager StateManager { get { return gameStateManager; } }
 
     public enum GameState
     {
@@ -31,5 +33,10 @@ public class GameManager : MonoBehaviour
         Play,
         Pause,
         GameOver
+    }
+    
+    private void Start()
+    {
+        gameStateManager.ChangeState(new InitState());
     }
 }

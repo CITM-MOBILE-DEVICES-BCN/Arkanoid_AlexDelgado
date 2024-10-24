@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
         Camera mainCamera = Camera.main;
         screenLimitLeft = transformLimitRight.position.x;
         screenLimitRight = transformLimitLeft.position.x;
-        playerWidth = GetComponent<SpriteRenderer>().bounds.extents.x;
+        playerWidth = GetComponentInChildren<SpriteRenderer>().bounds.extents.x;
 
 
     }
