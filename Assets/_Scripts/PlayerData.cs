@@ -13,6 +13,7 @@ public struct PlayerSerializableData
     public int highscore;
     public int lives;
     public uint level;
+    public bool died;
 }
 
 [CreateAssetMenu]
@@ -20,7 +21,6 @@ public class PlayerData : ScriptableObject
 {
     public PlayerSerializableData data;
 
-    public bool canContinue;
     public bool continueGame;
     public string filePath = "/settings.gamedata";
 
@@ -31,11 +31,6 @@ public class PlayerData : ScriptableObject
     public int Score {  get { return data.score; } }
     public int Lives { get { return data.lives; } }
     public int Highscore { get { return data.highscore; } }
-
-    PlayerData()
-    {
-        canContinue = File.Exists(filePath);
-    }
 
     public void IncreaseScore(Brick.Type brickType)
     {
@@ -54,8 +49,6 @@ public class PlayerData : ScriptableObject
             data.highscore = data.score;
             OnChangeHighscore?.Invoke(data.highscore);
         }
-        Debug.Log("High Score: " + data.highscore);
-        Debug.Log("Score: " + data.score);
 
         OnChangeScore?.Invoke(data.score);
     }
@@ -64,13 +57,12 @@ public class PlayerData : ScriptableObject
         data.score = 0;
         data.level = 0;
         data.lives = 3;
-        Debug.Log("Lives: " + data.lives);
+        data.died = false;
     }
 
     public void IncreaseLives()
     {
         data.lives++;
-        Debug.Log("Lives: " + data.lives);
 
         OnChangeLives?.Invoke(data.lives);
     }
@@ -82,19 +74,20 @@ public class PlayerData : ScriptableObject
         if (data.lives < 1)
         {
             GameManager.Instance.StateManager.ChangeState(new GameOverState());
+            data.died = true;
         }
-
-        Debug.Log("Lives: " + data.lives);
 
         OnChangeLives?.Invoke(data.lives);
     }
 
-    private void Save()
+    public void Save()
     {
         FileStream fileStream = new FileStream(filePath, FileMode.Create);
         BinaryFormatter bf = new BinaryFormatter();
         bf.Serialize(fileStream, data);
         fileStream.Close();
+
+        Debug.Log("Saving Game");
     }
 
     public void Load()
@@ -112,12 +105,10 @@ public class PlayerData : ScriptableObject
     {
         if(data.level == 0)
         {
-            Debug.Log("Returning level1");
             return "Level1";
         }
         else if(data.level == 1)
         {
-            Debug.Log("Returning level2");
             return "Level2";
         }
 
@@ -128,16 +119,19 @@ public class PlayerData : ScriptableObject
     {
         if(data.level == 1)
         {
-            Debug.Log("Setting level to 0");
             data.level = 0;
         }
         else
         {
-            Debug.Log("Setting level to 1");
             data.level = 1;
         }
 
         Save();
+    }
+
+    public bool CanContinue()
+    {
+        return File.Exists(filePath) && !data.died;
     }
 
 }

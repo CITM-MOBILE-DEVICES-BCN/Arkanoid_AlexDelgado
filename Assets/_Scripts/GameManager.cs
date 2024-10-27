@@ -45,6 +45,13 @@ public class GameManager : MonoBehaviour
     {
         gameStateManager.ChangeState(new InitState());
         StateManager.OnChangeState += OnDeath;
+
+        AudioManager.Instance.PlaynewLevelFX();
+    }
+
+    private void OnDestroy()
+    {
+        StateManager.OnChangeState -= OnDeath;
     }
 
     private void Update()
@@ -73,5 +80,13 @@ public class GameManager : MonoBehaviour
     public void IncreaseScore(Brick.Type brickType)
     {
         playerData.IncreaseScore(brickType);
+    }
+    public void IncreaseLives()
+    {
+        playerData.IncreaseLives();
+    }
+    public void SaveGame()
+    {
+        playerData.Save();
     }
 }

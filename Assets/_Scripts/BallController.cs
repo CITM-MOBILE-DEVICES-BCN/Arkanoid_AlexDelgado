@@ -81,6 +81,7 @@ public class BallController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        AudioManager.Instance.PlayHitFX();
         if(speed < maxSpeed)
         {
             speed += collisionIncrement;

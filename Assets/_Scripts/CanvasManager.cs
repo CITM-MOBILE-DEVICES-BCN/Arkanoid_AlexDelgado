@@ -46,6 +46,14 @@ public class CanvasManager : MonoBehaviour
 
     }
 
+    private void OnDestroy()
+    {
+        playerData.OnChangeScore -= UpdateScore;
+        playerData.OnChangeLives -= UpdateLives;
+        playerData.OnChangeHighscore -= UpdateHighscore;
+        GameManager.Instance.StateManager.OnChangeState -= OnPause;
+    }
+
     private void Update()
     {
         Rescale();
@@ -77,17 +85,22 @@ public class CanvasManager : MonoBehaviour
         if(state == GameManager.GameState.Pause)
         {
             pauseCanvas.enabled = true;
+            Time.timeScale = 0;
         }
     }
 
     public void ResumeGame()
     {
+        Time.timeScale = 1;
         pauseCanvas.enabled = false;
         GameManager.Instance.StateManager.ChangeState(new PlayState());
+        AudioManager.Instance.PlayclickFX();
     }
 
     public void ExitGame()
     {
+        AudioManager.Instance.PlayclickFX();
+        GameManager.Instance.SaveGame();
         Application.Quit();
 #if UNITY_EDITOR
         EditorApplication.isPlaying = false;

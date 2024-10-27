@@ -10,6 +10,7 @@ public class DeathTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Ball"))
         {
+            AudioManager.Instance.PlayloseLifeFX();
             playerData.DecreaseLives();
             GameManager.Instance.StateManager.ChangeState(new InitState());
         }
