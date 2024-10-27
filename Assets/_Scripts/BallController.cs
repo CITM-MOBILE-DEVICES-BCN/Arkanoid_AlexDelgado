@@ -56,7 +56,7 @@ public class BallController : MonoBehaviour
     {
         if(GameManager.Instance.CurrentGameState == GameState.Init)
         {
-            transform.position = paddleTarget.position + new Vector3(paddleOffsetX, paddleOffsetY, 0);
+            transform.position = paddleTarget.position + new Vector3(0, paddleOffsetY, 0);
         }
     }
 

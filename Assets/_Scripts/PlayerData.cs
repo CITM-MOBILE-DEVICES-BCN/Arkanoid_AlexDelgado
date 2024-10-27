@@ -11,7 +11,7 @@ public struct PlayerSerializableData
 {
     public int score;
     public int highscore;
-    public uint lives;
+    public int lives;
     public uint level;
 }
 
@@ -23,6 +23,14 @@ public class PlayerData : ScriptableObject
     public bool canContinue;
     public bool continueGame;
     public string filePath = "/settings.gamedata";
+
+    public event Action<int> OnChangeLives;
+    public event Action<int> OnChangeScore;
+    public event Action<int> OnChangeHighscore;
+
+    public int Score {  get { return data.score; } }
+    public int Lives { get { return data.lives; } }
+    public int Highscore { get { return data.highscore; } }
 
     PlayerData()
     {
@@ -44,9 +52,12 @@ public class PlayerData : ScriptableObject
         if (data.score >= data.highscore)
         {
             data.highscore = data.score;
+            OnChangeHighscore?.Invoke(data.highscore);
         }
         Debug.Log("High Score: " + data.highscore);
         Debug.Log("Score: " + data.score);
+
+        OnChangeScore?.Invoke(data.score);
     }
     public void InitializeData()
     {
@@ -60,6 +71,8 @@ public class PlayerData : ScriptableObject
     {
         data.lives++;
         Debug.Log("Lives: " + data.lives);
+
+        OnChangeLives?.Invoke(data.lives);
     }
 
     public void DecreaseLives()
@@ -72,6 +85,8 @@ public class PlayerData : ScriptableObject
         }
 
         Debug.Log("Lives: " + data.lives);
+
+        OnChangeLives?.Invoke(data.lives);
     }
 
     private void Save()

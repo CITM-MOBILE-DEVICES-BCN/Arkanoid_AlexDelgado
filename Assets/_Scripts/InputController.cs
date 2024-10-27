@@ -19,6 +19,7 @@ public class InputController : MonoBehaviour
         controls.Enable();
         controls.Player.Shoot.started += ctx => PaddleShoot();
         controls.Player.SwitchMode.started += ctx => SwitchMode();
+        controls.Player.Pause.started += ctx => OnPause();
     }
 
     private void OnDisable()
@@ -75,5 +76,10 @@ public class InputController : MonoBehaviour
         {
             PlayerController.Instance.SetDir(controls.Player.Move.ReadValue<float>());
         }
+    }
+
+    private void OnPause()
+    {
+        GameManager.Instance.StateManager.ChangeState(new PauseState());
     }
 }
