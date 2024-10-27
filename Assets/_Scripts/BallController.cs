@@ -9,9 +9,13 @@ public class BallController : MonoBehaviour
     private Vector2[] predefinedDirections;
 
     [SerializeField] private float speed = 1;
+    [SerializeField] private float maxSpeed = 20;
+    [SerializeField] private float collisionIncrement = 0.1f;
     [SerializeField] private Transform paddleTarget;
     [SerializeField] private float paddleOffsetY = 1;
     private float paddleOffsetX;
+
+    public float Speed { get { return speed; } private set { speed = value; } }
 
     private void Start()
     {
@@ -77,7 +81,10 @@ public class BallController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        speed += 0.01f;
+        if(speed < maxSpeed)
+        {
+            speed += collisionIncrement;
+        }
         Vector2 currentDirection = rb.velocity.normalized;
         Vector2 closestDirection = FindClosestDirection(currentDirection);
         rb.velocity = closestDirection * speed;

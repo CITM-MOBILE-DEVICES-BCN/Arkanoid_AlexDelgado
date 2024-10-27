@@ -95,7 +95,406 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Arkanoid Ship_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 883
+        width: 192
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b99792ef48e7c045b7dc1a364b9815a
+      internalID: -1954417016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arkanoid Ship_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 883
+        width: 192
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6973dde84416934e86ca93aad8cfd62
+      internalID: 317505207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arkanoid Ship_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 783
+        width: 192
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4df0c5d9173b994eb5422a7ff92c426
+      internalID: -155513697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arkanoid Ship_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 783
+        width: 192
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0861bd7642d9fd49919a3bde0123c46
+      internalID: 855123841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arkanoid Ship_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 683
+        width: 192
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f471489629fab274aae0b1c645c40c8f
+      internalID: -1852103329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arkanoid Ship_5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 683
+        width: 192
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de2d7858ed8bf54399e4c6331538c4d
+      internalID: 388435056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arkanoid Ship_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 583
+        width: 192
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5529e5080c27ad6448674bf06347c299
+      internalID: -32203853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arkanoid Ship_7
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 583
+        width: 192
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492d95f5582dd9946a3c72649e0819dc
+      internalID: -1574508730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arkanoid Ship_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 483
+        width: 192
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdaebace1989f7a4598714592b605062
+      internalID: 1410340017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arkanoid Ship_9
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 483
+        width: 192
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4feb007fa91b57b47b072e6721af6918
+      internalID: 366043535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arkanoid Ship_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 383
+        width: 192
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1bd40e0a2537d44aa0d50555740023
+      internalID: 1577640774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arkanoid Ship_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 383
+        width: 192
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89933e9f1caebf14685401cf6ff75733
+      internalID: -1752956495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arkanoid Ship_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 283
+        width: 192
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1352b8b8467246b489f139e416e4eb21
+      internalID: -808741928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arkanoid Ship_13
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 283
+        width: 192
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e852cdf3ee0ad774896fb8183b9df124
+      internalID: -2032449453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arkanoid Ship_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 183
+        width: 192
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d136bd912596e547887e51b504e20a4
+      internalID: -876579733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arkanoid Ship_15
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 183
+        width: 192
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c904ec1caa2263947bb6f1ec9052b93b
+      internalID: -2068159124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arkanoid Ship_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 83
+        width: 192
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c64f4dff9b66134a896f7d7587b6404
+      internalID: -1121728999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arkanoid Ship_17
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 83
+        width: 192
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44075468ccd6c8d428d717821254ad22
+      internalID: 1202772787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arkanoid Ship_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 995
+        width: 193
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397f7e5454160f44fb02ee0e2eabcdcf
+      internalID: 27957587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +505,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Arkanoid Ship_0: -1954417016
+      Arkanoid Ship_1: 317505207
+      Arkanoid Ship_10: 1577640774
+      Arkanoid Ship_11: -1752956495
+      Arkanoid Ship_12: -808741928
+      Arkanoid Ship_13: -2032449453
+      Arkanoid Ship_14: -876579733
+      Arkanoid Ship_15: -2068159124
+      Arkanoid Ship_16: -1121728999
+      Arkanoid Ship_17: 1202772787
+      Arkanoid Ship_18: 27957587
+      Arkanoid Ship_2: -155513697
+      Arkanoid Ship_3: 855123841
+      Arkanoid Ship_4: -1852103329
+      Arkanoid Ship_5: 388435056
+      Arkanoid Ship_6: -32203853
+      Arkanoid Ship_7: -1574508730
+      Arkanoid Ship_8: 1410340017
+      Arkanoid Ship_9: 366043535
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

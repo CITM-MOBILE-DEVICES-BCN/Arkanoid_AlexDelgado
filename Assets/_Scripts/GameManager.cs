@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using static GameManager;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +10,8 @@ public class GameManager : MonoBehaviour
     
     private static GameManager instance;
     public static GameManager Instance { get { return instance; } }
+
+    [SerializeField] private PlayerData playerData;
 
     private void Awake()
     {
@@ -24,9 +28,10 @@ public class GameManager : MonoBehaviour
     #endregion
 
     public GameStateManager gameStateManager;
-
     public GameStateManager StateManager => gameStateManager;
     public GameState CurrentGameState { get { return gameStateManager.CurrentState; } }
+
+    private bool changeScene;
 
     public enum GameState
     {
@@ -39,5 +44,34 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         gameStateManager.ChangeState(new InitState());
+        StateManager.OnChangeState += OnDeath;
+    }
+
+    private void Update()
+    {
+        if(changeScene)
+        {
+            playerData.AdvanceLevel();
+            SceneManager.LoadScene(playerData.GetLevel());
+            changeScene = false;
+        }
+    }
+
+    private void OnDeath(GameState state)
+    {
+        if(state == GameState.GameOver)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+    }
+
+    public void AdvanceLevel()
+    {
+        changeScene = true;
+    }
+
+    public void IncreaseScore(Brick.Type brickType)
+    {
+        playerData.IncreaseScore(brickType);
     }
 }

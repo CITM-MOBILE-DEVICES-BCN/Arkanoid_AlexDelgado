@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -144,7 +144,7 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 92
-        width: 32
+        width: 48
         height: 8
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -163,7 +163,7 @@ TextureImporter:
       name: Vaus_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 112
         y: 92
         width: 32
         height: 8
@@ -184,7 +184,7 @@ TextureImporter:
       name: Vaus_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 144
         y: 92
         width: 32
         height: 8
@@ -205,7 +205,7 @@ TextureImporter:
       name: Vaus_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 176
         y: 92
         width: 32
         height: 8
@@ -270,7 +270,7 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 84
-        width: 32
+        width: 48
         height: 8
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -289,7 +289,7 @@ TextureImporter:
       name: Vaus_9
       rect:
         serializedVersion: 2
-        x: 96
+        x: 112
         y: 84
         width: 32
         height: 8
@@ -310,7 +310,7 @@ TextureImporter:
       name: Vaus_10
       rect:
         serializedVersion: 2
-        x: 128
+        x: 144
         y: 84
         width: 32
         height: 8
@@ -331,7 +331,7 @@ TextureImporter:
       name: Vaus_11
       rect:
         serializedVersion: 2
-        x: 160
+        x: 176
         y: 84
         width: 32
         height: 8
@@ -396,7 +396,7 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 76
-        width: 32
+        width: 48
         height: 8
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -415,7 +415,7 @@ TextureImporter:
       name: Vaus_15
       rect:
         serializedVersion: 2
-        x: 96
+        x: 112
         y: 76
         width: 32
         height: 8
@@ -436,7 +436,7 @@ TextureImporter:
       name: Vaus_16
       rect:
         serializedVersion: 2
-        x: 128
+        x: 144
         y: 76
         width: 32
         height: 8
@@ -457,7 +457,7 @@ TextureImporter:
       name: Vaus_17
       rect:
         serializedVersion: 2
-        x: 160
+        x: 176
         y: 76
         width: 32
         height: 8
@@ -522,7 +522,7 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 68
-        width: 32
+        width: 48
         height: 8
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -541,7 +541,7 @@ TextureImporter:
       name: Vaus_21
       rect:
         serializedVersion: 2
-        x: 96
+        x: 112
         y: 68
         width: 32
         height: 8
@@ -562,7 +562,7 @@ TextureImporter:
       name: Vaus_22
       rect:
         serializedVersion: 2
-        x: 128
+        x: 144
         y: 68
         width: 32
         height: 8
@@ -583,7 +583,7 @@ TextureImporter:
       name: Vaus_23
       rect:
         serializedVersion: 2
-        x: 160
+        x: 176
         y: 68
         width: 32
         height: 8
@@ -648,7 +648,7 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 60
-        width: 32
+        width: 48
         height: 8
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -667,7 +667,7 @@ TextureImporter:
       name: Vaus_27
       rect:
         serializedVersion: 2
-        x: 96
+        x: 112
         y: 60
         width: 32
         height: 8
@@ -688,7 +688,7 @@ TextureImporter:
       name: Vaus_28
       rect:
         serializedVersion: 2
-        x: 128
+        x: 144
         y: 60
         width: 32
         height: 8
@@ -709,7 +709,7 @@ TextureImporter:
       name: Vaus_29
       rect:
         serializedVersion: 2
-        x: 160
+        x: 176
         y: 60
         width: 32
         height: 8
@@ -731,8 +731,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 52
-        width: 32
+        y: 51
+        width: 9
         height: 8
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -774,7 +774,7 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 52
-        width: 32
+        width: 48
         height: 8
       alignment: 1
       pivot: {x: 0, y: 1}
@@ -793,7 +793,7 @@ TextureImporter:
       name: Vaus_33
       rect:
         serializedVersion: 2
-        x: 96
+        x: 112
         y: 52
         width: 32
         height: 8
@@ -814,7 +814,7 @@ TextureImporter:
       name: Vaus_34
       rect:
         serializedVersion: 2
-        x: 128
+        x: 144
         y: 52
         width: 32
         height: 8
@@ -835,7 +835,7 @@ TextureImporter:
       name: Vaus_35
       rect:
         serializedVersion: 2
-        x: 160
+        x: 176
         y: 52
         width: 32
         height: 8
@@ -853,73 +853,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Vaus_36
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 44
-        width: 32
-        height: 8
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3a2d67853537ed4ba1ec9e38df468bd
-      internalID: 1544050344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vaus_37
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 44
-        width: 32
-        height: 8
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46293f313ecb38e418a1f68263646739
-      internalID: 1171290676
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vaus_38
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 44
-        width: 32
-        height: 8
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efb5508118efcb94dae55299f6b6d9ec
-      internalID: 154960497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Vaus_39
       rect:
         serializedVersion: 2
-        x: 96
+        x: 112
         y: 44
         width: 32
         height: 8
@@ -940,7 +877,7 @@ TextureImporter:
       name: Vaus_40
       rect:
         serializedVersion: 2
-        x: 128
+        x: 144
         y: 44
         width: 32
         height: 8
@@ -961,7 +898,7 @@ TextureImporter:
       name: Vaus_41
       rect:
         serializedVersion: 2
-        x: 160
+        x: 176
         y: 44
         width: 32
         height: 8
@@ -979,73 +916,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Vaus_42
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 36
-        width: 32
-        height: 8
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75c355b7006769b43a71b6451e84a9f5
-      internalID: -1288785987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vaus_43
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 36
-        width: 32
-        height: 8
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e101384edb467c54c97ed36438409883
-      internalID: 170239620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vaus_44
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 36
-        width: 32
-        height: 8
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 636ee6a113402bf4ab42681b1a396b13
-      internalID: 1419165188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Vaus_45
       rect:
         serializedVersion: 2
-        x: 96
+        x: 112
         y: 36
         width: 32
         height: 8
@@ -1066,7 +940,7 @@ TextureImporter:
       name: Vaus_46
       rect:
         serializedVersion: 2
-        x: 128
+        x: 144
         y: 36
         width: 32
         height: 8
@@ -1087,7 +961,7 @@ TextureImporter:
       name: Vaus_47
       rect:
         serializedVersion: 2
-        x: 160
+        x: 176
         y: 36
         width: 32
         height: 8
@@ -1105,73 +979,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Vaus_48
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 28
-        width: 32
-        height: 8
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d82c37865c5970498d645d45d332405
-      internalID: 1460272091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vaus_49
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 28
-        width: 32
-        height: 8
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f627d4adf585424e8c9d0171480efba
-      internalID: 1380632317
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vaus_50
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 28
-        width: 32
-        height: 8
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3ce1d3f91ab32642984bb73d73611bf
-      internalID: 1497542413
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Vaus_51
       rect:
         serializedVersion: 2
-        x: 96
+        x: 112
         y: 28
         width: 32
         height: 8
@@ -1192,7 +1003,7 @@ TextureImporter:
       name: Vaus_52
       rect:
         serializedVersion: 2
-        x: 128
+        x: 144
         y: 28
         width: 32
         height: 8
@@ -1213,7 +1024,7 @@ TextureImporter:
       name: Vaus_53
       rect:
         serializedVersion: 2
-        x: 160
+        x: 176
         y: 28
         width: 32
         height: 8
@@ -1231,32 +1042,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Vaus_54
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 20
-        width: 32
-        height: 8
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3a687f398a597a4d829f5093f4fbf7d
-      internalID: 1815732655
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Vaus_55
       rect:
         serializedVersion: 2
-        x: 32
-        y: 20
+        x: 24
+        y: 16
         width: 32
         height: 8
       alignment: 1
@@ -1277,7 +1067,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 20
+        y: 16
         width: 32
         height: 8
       alignment: 1
@@ -1298,7 +1088,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 20
+        y: 16
         width: 32
         height: 8
       alignment: 1
@@ -1319,7 +1109,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 20
+        y: 16
         width: 32
         height: 8
       alignment: 1
@@ -1339,7 +1129,7 @@ TextureImporter:
       name: Vaus_59
       rect:
         serializedVersion: 2
-        x: 160
+        x: 176
         y: 20
         width: 32
         height: 8
@@ -1357,32 +1147,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Vaus_60
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 12
-        width: 32
-        height: 8
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c35328067dfd0ea49b48aa93f4bac3b7
-      internalID: 597210529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Vaus_61
       rect:
         serializedVersion: 2
-        x: 32
-        y: 12
+        x: 24
+        y: 8
         width: 32
         height: 8
       alignment: 1
@@ -1403,7 +1172,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 12
+        y: 8
         width: 32
         height: 8
       alignment: 1
@@ -1424,7 +1193,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 12
+        y: 8
         width: 32
         height: 8
       alignment: 1
@@ -1445,7 +1214,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 12
+        y: 8
         width: 32
         height: 8
       alignment: 1
@@ -1465,7 +1234,7 @@ TextureImporter:
       name: Vaus_65
       rect:
         serializedVersion: 2
-        x: 160
+        x: 176
         y: 12
         width: 32
         height: 8
@@ -1483,32 +1252,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Vaus_66
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 4
-        width: 32
-        height: 8
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f406cee79f3712846b4df6c1197e4883
-      internalID: -1180205787
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Vaus_67
       rect:
         serializedVersion: 2
-        x: 32
-        y: 4
+        x: 24
+        y: 0
         width: 32
         height: 8
       alignment: 1
@@ -1529,7 +1277,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 4
+        y: 0
         width: 32
         height: 8
       alignment: 1
@@ -1550,7 +1298,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 4
+        y: 0
         width: 32
         height: 8
       alignment: 1
@@ -1571,7 +1319,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 4
+        y: 0
         width: 32
         height: 8
       alignment: 1
@@ -1591,7 +1339,7 @@ TextureImporter:
       name: Vaus_71
       rect:
         serializedVersion: 2
-        x: 160
+        x: 176
         y: 4
         width: 32
         height: 8
